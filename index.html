@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<!--Setting the background color to subtle dark-->
+
+<body class="bg-dark-subtle">
+  <!--fluid container div-->
+  <div class="outerDiv" style="height: 85vh;">
+    <!--Center align heading with flexbox-->
+    <div class="drumHeading d-flex flex-nowrap justify-content-center align-items-center border-bottom border-dark">
+      <h1>Drums🥁</h1>
+    </div>
+    <!--Buttons inside Bootstrap flexbox-->
+    <div class="buttonParas d-flex justify-content-center align-items-center flex-nowrap" style="height: 80vh;">
+      <!--👆outer flex box for centering the next flex box-->
+      <div class="buttons container-fluid d-flex justify-content-evenly align-items-center flex-wrap"> <!--The only flexbox with wrap enabled-->
+        <!--👆Fluid container to occupy 100% of the width available on device screen-->
+        <button class="drumButton btn btn-secondary btn-lg rounded-circle">
+          <div class="w d-flex flex-column flex-nowrap"> <!--Buttons are inline, Changing the flex direction of button to column so that letter appears below -->
+            
+            <!--A flexbox inside buttons to make text appear below the image instead of on the right side.-->
+            <img src="./images/tom1.png" alt="" class="drumImages rounded-circle" style="width: 100px; height: 100px;"> w
+          </div>
+        </button>
+        <button class="drumButton btn btn-secondary btn-lg rounded-circle">
+          <div class="a d-flex flex-column flex-nowrap"> 
+            <img src="./images/tom2.png" alt="" class="drumImages rounded-circle" style="width: 100px; height: 100px;">
+            a
+          </div>
+        </button>
+        <button class="drumButton btn btn-secondary btn-lg rounded-circle rounded-circle">
+          <div class="s d-flex flex-column flex-nowrap">
+            <img src="./images/tom7.png" alt="" class="drumImages rounded-circle" style="width: 100px; height: 100px;">
+            s
+          </div>
+        </button>
+        <button class="drumButton btn btn-secondary btn-lg rounded-circle">
+          <div class="d d-flex flex-column flex-nowrap">
+            <img src="./images/tom7.png" alt="" class="drumImages rounded-circle" style="width: 100px; height: 100px;">
+          d
+          </div>
+        </button>
+        <button class="drumButton btn btn-secondary btn-lg rounded-circle">
+          <div class="j d-flex flex-column flex-nowrap">
+            <img src="./images/snare.png" alt="" class="drumImages rounded-circle" style="width: 100px; height: 100px;">
+           j
+          </div>
+        </button>
+        <button class="drumButton btn btn-secondary btn-lg rounded-circle">
+          <div class="d-flex flex-column flex-nowrap">
+            <img src="./images/crash.png" alt="" class="drumImages rounded-circle" style="width: 100px; height: 100px;">
+            k
+          </div>
+        </button>
+        <button class="drumButton btn btn-secondary btn-lg rounded-circle">
+          <div class="l d-flex flex-column flex-nowrap">
+            <img src="./images/kick.png" alt="" class="drumImages rounded-circle" style="width: 100px; height: 100px;">
+            l
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./index.js" charset="utf-8"></script>
+</body>
+<!--footer starts here-->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 mt-5 border-top border-dark">
+
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+    </a>
+    <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ankush Nagdev</span>
+  </div>
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#twitter"></use>
+        </svg></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#instagram"></use>
+        </svg></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#facebook"></use>
+        </svg></a></li>
+  </ul>
+</footer>
+
+</html>
